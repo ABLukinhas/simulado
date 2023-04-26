@@ -1,0 +1,12 @@
+<script>
+    let tamanhoparade = Number(prompt('qual o tamanho da parede em M²?'));
+
+        tamanhoparade = tamanhoparade * 0,97;
+        tamanhoparade = tamanhoparade - (tamanhoparade * 0,03);
+        tamanhoparade = tamanhoparade - (tamanhoparade * 3 / 100);
+
+    const areaTijolo = 0.19 * 0.19;
+    const quantidadeTijolo = Math.ceil (tamanhoparade / areaTijolo);
+    alert(`o tamanho da arede retirando as rejuntas e os cimentos sao de ${quantidadeTijolo}`)
+        
+</script>
